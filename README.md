@@ -1,1 +1,2 @@
-# barber-studio-96
+Proyecto Barbería Ari Pereyra.
+"Barber Studio '96".
