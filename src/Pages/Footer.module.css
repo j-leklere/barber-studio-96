@@ -1,0 +1,88 @@
+/* ////////// */
+/* GRAL */
+/* ////////// */
+footer {
+  margin-top: 200px;
+  background-color: #ff8b00; /*FFD369*/
+  padding-top: 30px;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+/* ////////// */
+/* LOGOS */
+/* ////////// */
+
+.footerLogos {
+  width: 40%;
+  text-align: center;
+}
+
+.footerLogosImg {
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+.footerLogosRedes {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* ////////// */
+/* INFO */
+/* ////////// */
+.footerInfo {
+  width: 60%;
+  text-align: center;
+  align-self: flex-start;
+}
+
+.footerInfoTitle {
+  margin-bottom: 15px;
+}
+
+.footerInfoLink {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* ////////// */
+/* COPY */
+/* ////////// */
+.footerCopy {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.521);
+
+  padding-bottom: 5px;
+}
+
+/* ////////// */
+/* DECO */
+/* ////////// */
+.footerBorderTop {
+  width: 80%;
+  border-top: 1px solid rgba(255, 255, 255, 0.521);
+
+  padding-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footerBorderBottom {
+  width: 80%;
+  border-top: 1px solid rgba(255, 255, 255, 0.521);
+
+  padding-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
