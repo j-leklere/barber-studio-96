@@ -1,4 +1,4 @@
-import classes from "./LoginRegister.module.css";
+import classes from './LoginRegister.module.css'
 
 function Login() {
   return (
@@ -14,20 +14,20 @@ function Login() {
       </div>
       <form className={classes.loginForm}>
         <div>
-          <label htmlFor="email">Email</label>
-          <input type="email" name="email" id="email" />
+          <label htmlFor='email'>Email</label>
+          <input type='email' name='email' id='email' />
         </div>
         <div>
-          <label htmlFor="password">Contraseña</label>
-          <input type="password" name="password" id="password" />
+          <label htmlFor='password'>Contraseña</label>
+          <input type='password' name='password' id='password' />
         </div>
         <label className={classes.labelRecordarme}>
-          <input type="checkbox" name="recordarme" /> Recordame
+          <input type='checkbox' name='recordarme' /> Recordame
         </label>
-        <button type="submit">Iniciar Sesión</button>
+        <button type='submit'>Iniciar Sesión</button>
       </form>
     </main>
-  );
+  )
 }
 
-export default Login;
+export default Login

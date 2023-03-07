@@ -1,4 +1,5 @@
 import { Outlet } from 'react-router-dom'
+import Footer from './Footer'
 
 function RootLayout() {
   return (
@@ -6,6 +7,7 @@ function RootLayout() {
       {/* Header element goes here */}
       <Outlet />
       {/* Footer element goes here */}
+      <Footer />
     </>
   )
 }

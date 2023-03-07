@@ -1,14 +1,5 @@
-body {
-  padding: 0 5%;
-}
-
-h1 {
-  text-align: center;
-  color: #ff8c00;
-  margin: 3rem 0;
-}
-
-img {
+.barber-img,
+.barber-cuts-grid figure img {
   width: 100%;
   /* margin: 0 5%; */
   display: block;

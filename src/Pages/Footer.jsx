@@ -1,4 +1,4 @@
-import classes from "./Footer.module.css";
+import classes from './Footer.module.css'
 
 function Footer() {
   return (
@@ -7,8 +7,8 @@ function Footer() {
       <div className={classes.footerContainer}>
         <div className={classes.footerLogos}>
           <img
-            src="/logo-barber.jpeg"
-            alt=""
+            src='/logo-barber.jpeg'
+            alt=''
             className={classes.footerLogosImg}
           />
           <div className={classes.footerLogosRedes}>
@@ -18,19 +18,19 @@ function Footer() {
         </div>
         <div className={classes.footerInfo}>
           <h2 className={classes.footerInfoTitle}>Información</h2>
-          <a href="tel: " className={classes.footerInfoLink}>
+          <a href='tel: ' className={classes.footerInfoLink}>
             Contacto
           </a>
 
-          <a href="" className={classes.footerInfoLink}>
+          <a href='' className={classes.footerInfoLink}>
             Dirección
           </a>
 
-          <a href="" className={classes.footerInfoLink}>
+          <a href='' className={classes.footerInfoLink}>
             Servicios
           </a>
 
-          <a href="" className={classes.footerInfoLink}>
+          <a href='' className={classes.footerInfoLink}>
             Barberos
           </a>
         </div>
@@ -38,7 +38,7 @@ function Footer() {
       <div className={classes.footerBorderBottom}></div>
       <p className={classes.footerCopy}>© 2023 Copyright</p>
     </footer>
-  );
+  )
 }
 
-export default Footer;
+export default Footer

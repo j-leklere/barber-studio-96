@@ -6,7 +6,7 @@ import styles from './Barber.module.css'
 function Barber(props) {
   return (
     <>
-      <img src={props.image} alt={props.alt} />
+      <img className={styles['barber-img']} src={props.image} alt={props.alt} />
       <div className={styles['barber--ig-div']}>
         <h2 className={styles['barber-name']}>{props.name}</h2>
         <FontAwesomeIcon className={styles['ig-icon']} icon={faInstagram} />

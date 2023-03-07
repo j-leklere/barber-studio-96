@@ -3,6 +3,8 @@ import Home from './Pages/Home'
 import Error from './Pages/Error'
 import RootLayout from './Pages/RootLayout'
 import Barbers from './Pages/Barbers'
+import Login from './Pages/Login'
+import Register from './Pages/Register'
 
 const router = createBrowserRouter([
   {
@@ -17,6 +19,14 @@ const router = createBrowserRouter([
       {
         path: '/barberos',
         element: <Barbers />,
+      },
+      {
+        path: '/login',
+        element: <Login />,
+      },
+      {
+        path: '/register',
+        element: <Register />,
       },
     ],
   },

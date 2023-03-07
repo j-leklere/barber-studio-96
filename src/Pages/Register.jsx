@@ -1,4 +1,4 @@
-import classes from "./LoginRegister.module.css";
+import classes from './LoginRegister.module.css'
 
 function Register() {
   return (
@@ -14,30 +14,30 @@ function Register() {
       </div>
       <form className={classes.registerForm}>
         <div>
-          <label htmlFor="firstName">Nombre</label>
-          <input type="text" name="firstName" id="firstName" />
+          <label htmlFor='firstName'>Nombre</label>
+          <input type='text' name='firstName' id='firstName' />
         </div>
         <div>
-          <label htmlFor="lastName">Apellido</label>
-          <input type="text" name="lastName" id="lastName" />
+          <label htmlFor='lastName'>Apellido</label>
+          <input type='text' name='lastName' id='lastName' />
         </div>
         <div>
-          <label htmlFor="email">Email</label>
-          <input type="email" name="email" id="email" />
+          <label htmlFor='email'>Email</label>
+          <input type='email' name='email' id='email' />
         </div>
         <div>
-          <label htmlFor="password">Contraseña</label>
-          <input type="password" name="password" id="password" />
+          <label htmlFor='password'>Contraseña</label>
+          <input type='password' name='password' id='password' />
         </div>
         <div>
-          <label htmlFor="confirmPassword">Confirmar contraseña</label>
-          <input type="password" name="confirmPassword" id="confirmPassword" />
+          <label htmlFor='confirmPassword'>Confirmar contraseña</label>
+          <input type='password' name='confirmPassword' id='confirmPassword' />
         </div>
 
-        <button type="submit">Crear una cuenta</button>
+        <button type='submit'>Crear una cuenta</button>
       </form>
     </main>
-  );
+  )
 }
 
-export default Register;
+export default Register
