@@ -1,0 +1,17 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 15px 10px;
+  background-color: #fff2d2;
+
+  border-bottom: 1px solid #888;
+}
+
+.heading-primary {
+  font-size: 26px;
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: 700;
+}

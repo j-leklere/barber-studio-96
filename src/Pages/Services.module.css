@@ -1,0 +1,51 @@
+.heading-secondary {
+  font-size: 22px;
+}
+
+.services-title {
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.section-services {
+  padding: 10px 25px;
+}
+
+.services-service {
+  margin-top: 26px;
+}
+
+.services-service div img {
+  max-width: 100%;
+  height: auto;
+}
+
+.services-service div:first-child {
+  position: relative;
+}
+
+.services-service div:first-child:after {
+  content: '$1000';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: -6%;
+  right: -5%;
+  font-size: 22px;
+  font-weight: 700;
+  color: #efb810;
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 10px 20px;
+}
+
+.services-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 5px;
+}

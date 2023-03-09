@@ -1,12 +1,12 @@
 import { Outlet } from 'react-router-dom'
+import Header from './Header'
 import Footer from './Footer'
 
 function RootLayout() {
   return (
     <>
-      {/* Header element goes here */}
+      <Header />
       <Outlet />
-      {/* Footer element goes here */}
       <Footer />
     </>
   )
