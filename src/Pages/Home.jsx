@@ -10,12 +10,9 @@ import { faCircle as faCircleSolid } from '@fortawesome/free-solid-svg-icons'
 import styles from './Home.module.css'
 import { faCircle } from '@fortawesome/free-regular-svg-icons'
 
-import Header from '../Components/Header'
-
 function Home() {
   return (
     <>
-      <Header></Header>
       {/* <div style={{ backgroundColor: 'orange' }}>HEADER</div> */}
       {/* Carousel */}
       <div>

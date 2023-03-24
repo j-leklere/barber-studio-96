@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './Pages/Home'
+import Services from './Pages/Services'
 import Error from './Pages/Error'
 import RootLayout from './Pages/RootLayout'
 import Barbers from './Pages/Barbers'
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home />,
+      },
+      {
+        path: '/services',
+        element: <Services />,
       },
       {
         path: '/barberos',
