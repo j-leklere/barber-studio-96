@@ -1,13 +1,32 @@
+.carousel {
+  position: relative;
+}
+
 .carousel-img {
   width: 100%;
+}
+
+.carousel-circles {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  right: 50%;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.carousel-circles svg {
+  color: #fff;
+  height: 2rem;
+  width: 2rem;
 }
 
 .section-title {
   color: #444;
   font-size: 2.8rem;
   font-weight: 600;
-  margin-top: 20px;
-  margin-left: 20px;
+  margin: 20px 0 5px 20px;
 }
 
 .btn {
@@ -20,6 +39,7 @@
 .btn-appointment {
   width: 90%;
   background-color: #c87d24;
+  background-color: var(--main-color-dark);
   color: #fff;
   font-size: 2.6rem;
   /* margin: 0 5%; */

@@ -13,14 +13,22 @@ import { faCircle } from '@fortawesome/free-regular-svg-icons'
 function Home() {
   return (
     <>
-      {/* <div style={{ backgroundColor: 'orange' }}>HEADER</div> */}
       {/* Carousel */}
-      <div>
+      <div className={styles.carousel}>
         <img
           className={styles['carousel-img']}
           src='carousel-1.jpg'
           alt='carousel-1'
         />
+        <div className={styles['carousel-circles']}>
+          <FontAwesomeIcon icon={faCircle} />
+          <FontAwesomeIcon icon={faCircle} />
+          <FontAwesomeIcon
+            icon={faCircleSolid}
+            style={{ color: 'var(--main-color)' }}
+          />
+          <FontAwesomeIcon icon={faCircle} />
+        </div>
       </div>
       <div className={styles['appointment-div']}>
         <button className={`${styles['btn']} ${styles['btn-appointment']}`}>
@@ -48,7 +56,10 @@ function Home() {
             pariatur."
           </p>
           <div className={styles['testiomnials-dots']}>
-            <FontAwesomeIcon icon={faCircleSolid} />
+            <FontAwesomeIcon
+              icon={faCircleSolid}
+              style={{ color: 'var(--main-color)' }}
+            />
             <FontAwesomeIcon icon={faCircle} />
             <FontAwesomeIcon icon={faCircle} />
           </div>
