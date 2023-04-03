@@ -2,8 +2,9 @@ import styles from './Services.module.css'
 
 function Services() {
   return (
-    <main>
-      <section className={styles['section-services']}>
+    <main className={styles.main}>
+      <h1 className={styles['heading-primary']}>&#126; Services &#126;</h1>
+      <section className={styles['section-services--mobile']}>
         <div className={styles['services-service']}>
           <div>
             <img
@@ -32,6 +33,56 @@ function Services() {
               Corte + Barba
             </h2>
             <button className={styles['more-info-btn']}>INFO BTN</button>
+          </div>
+        </div>
+      </section>
+      <section className={styles['section-services--pc']}>
+        <div className={styles['services-service--pc']}>
+          <div className={styles['services-info--pc']}>
+            <div className={styles['services-info-info--pc']}>
+              <div className={styles['name-price']}>
+                <h2 className={styles['nombre']}>Pelo</h2>
+                <h2 className={styles['precio']}>$1500</h2>
+              </div>
+              <p className={styles['descripcion']}>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Temporibus unde totam eligendi ducimus facilis fuga quasi
+                pariatur aut, quis impedit quaerat officia, aperiam quo
+                praesentium eveniet explicabo molestiae voluptatem odio?
+              </p>
+            </div>
+            <div className={styles['services-img--pc1']}>
+              <img
+                className={styles['services-img--pc']}
+                src='barber-cut-9.avif'
+                alt='corte'
+              />
+            </div>
+          </div>
+          <div className={styles['img-pc--right']}></div>
+        </div>
+        <div className={styles['services-service--pc']}>
+          <div className={styles['img-pc--left']}></div>
+          <div className={styles['services-info--pc']}>
+            <div className={styles['services-info-info--pc']}>
+              <div className={styles['name-price']}>
+                <h2 className={styles['nombre']}>Pelo</h2>
+                <h2 className={styles['precio']}>$1500</h2>
+              </div>
+              <p className={styles['descripcion']}>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Temporibus unde totam eligendi ducimus facilis fuga quasi
+                pariatur aut, quis impedit quaerat officia, aperiam quo
+                praesentium eveniet explicabo molestiae voluptatem odio?
+              </p>
+            </div>
+            <div className={styles['services-img--pc1']}>
+              <img
+                className={styles['services-img--pc']}
+                src='barber-cut-9.avif'
+                alt='corte'
+              />
+            </div>
           </div>
         </div>
       </section>

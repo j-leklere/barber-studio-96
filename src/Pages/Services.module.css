@@ -1,3 +1,15 @@
+.main {
+  padding: 0 5rem;
+}
+
+.heading-primary {
+  padding-top: 2rem;
+  font-size: 26px;
+  color: #efb810;
+  font-weight: 600;
+  text-align: center;
+}
+
 .heading-secondary {
   font-size: 22px;
 }
@@ -8,12 +20,12 @@
   font-weight: 700;
 }
 
-.section-services {
+.section-services--pc {
   padding: 10px 25px;
 }
 
 .services-service {
-  margin-top: 26px;
+  margin: 26px auto;
 }
 
 .services-service div img {
@@ -35,10 +47,9 @@
   top: -6%;
   right: -5%;
   font-size: 22px;
-  font-weight: 700;
-  color: #efb810;
-  background-color: #fff;
-  border: 1px solid #000;
+  font-weight: 300;
+  color: #fff;
+  background-color: #efb810;
   padding: 10px 20px;
 }
 
@@ -48,4 +59,83 @@
   justify-content: space-between;
 
   padding: 5px;
+}
+
+.section-services--pc {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .main {
+    background-color: #292929;
+  }
+
+  .section-services--mobile {
+    display: none;
+  }
+
+  .section-services--pc {
+    display: block;
+    max-width: 114rem;
+    margin: auto;
+  }
+
+  .services-service--pc {
+    display: flex;
+    height: 75rem;
+    margin-bottom: 6rem;
+  }
+
+  .img-pc--right {
+    background-image: url('../../public/barber-cut-7.avif');
+    width: 50%;
+  }
+
+  .img-pc--left {
+    background-image: url('../../public/barber-cut-10.avif');
+    width: 50%;
+  }
+
+  .services-info--pc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding: 2rem 4rem;
+  }
+
+  /* .services-info-info--pc {
+    padding-bottom: 6rem;
+  } */
+
+  .services-img--pc {
+    width: 100%;
+  }
+
+  .name-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .nombre {
+    font-size: 2.4rem;
+    color: #fff;
+  }
+
+  .precio {
+    padding: 1rem 3rem;
+    background-color: #efb810;
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 400;
+  }
+
+  .descripcion {
+    padding: 2rem 0;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    color: #fff;
+  }
 }
