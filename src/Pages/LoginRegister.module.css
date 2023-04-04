@@ -2,7 +2,7 @@
 /* LOGIN AND REGISTER */
 /* ////////// */
 .loginRegisterTitle {
-  font-size: 26px;
+  font-size: 2.6rem;
   color: #ff8b00;
   text-align: center;
 
@@ -20,31 +20,36 @@
 }
 
 .loginRegisterBtn {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.3);
   border: none;
+  cursor: default;
   border-bottom: solid 1px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
 
   width: 100%;
   background-color: white;
-  padding: 15px;
-  margin-bottom: 25px;
+  padding: 1.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .loginRegisterBtnActive {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: bold;
   color: #ff8b00;
   border: none;
   border-bottom: solid 1px #ff8b00;
-  cursor: pointer;
+  cursor: default;
 
   width: 100%;
   background-color: white;
-  padding: 15px;
-  margin-bottom: 25px;
+  padding: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.loginRegisterBtn-text {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* ////////// */
@@ -55,9 +60,9 @@
 /* FORM */
 /* ////////// */
 .loginForm {
-  font-size: 18px;
+  font-size: 1.8rem;
 
-  width: 85%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
 
@@ -68,33 +73,35 @@
 .loginForm div {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 .loginForm div label {
-  margin-bottom: 8px;
+  margin-bottom: 0.8rem;
 }
 
 .loginForm div input {
-  height: 35px;
+  height: 3.5rem;
+  background-color: #ebebeb;
+  border: 1px solid black;
 }
 
 .loginForm button {
-  font-size: 18px;
+  font-size: 1.8rem;
   color: white;
   background-color: #ff8b00;
   cursor: pointer;
 
-  height: 40px;
+  height: 4rem;
   border: none;
 }
 
 .labelRecordarme {
-  font-size: 16px;
+  font-size: 1.6rem;
 
   align-self: center;
-  margin-top: 5px;
-  margin-bottom: 25px;
+  margin-top: 0.5rem;
+  margin-bottom: 2.5rem;
 }
 
 /* ////////// */
@@ -105,9 +112,9 @@
 /* FORM */
 /* ////////// */
 .registerForm {
-  font-size: 18px;
+  font-size: 1.8rem;
 
-  width: 85%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
 
@@ -118,24 +125,50 @@
 .registerForm div {
   display: flex;
   flex-direction: column;
-  margin-bottom: 25px;
+  margin-bottom: 2.5rem;
 }
 
 .registerForm div label {
-  margin-bottom: 8px;
+  margin-bottom: 0.8rem;
 }
 
 .registerForm div input {
-  height: 35px;
+  height: 3.5rem;
+  background-color: #ebebeb;
+  border: 1px solid black;
 }
 
 .registerForm button {
-  font-size: 18px;
+  font-size: 1.8rem;
   color: white;
   background-color: #ff8b00;
   cursor: pointer;
 
-  height: 40px;
+  height: 4rem;
   border: none;
-  margin-top: 15px;
+  margin-top: 1.5rem;
+}
+
+/* ////////// */
+/* MEDIA QUERIES */
+/* ////////// */
+@media (min-width: 1024px) {
+  .loginRegisterBtnsContainer {
+    width: 90rem;
+  }
+  /* ////////// */
+  /* LOGIN */
+  /* ////////// */
+}
+
+@media (min-width: 768px) {
+  /* ////////// */
+  /* LOGIN */
+  /* ////////// */
+  .loginForm {
+    width: 65rem;
+  }
+  .registerForm {
+    width: 65rem;
+  }
 }

@@ -1,18 +1,25 @@
-import classes from './LoginRegister.module.css'
+import styles from './LoginRegister.module.css'
+import { Link } from 'react-router-dom'
 
 function Login() {
   return (
     <main>
-      <h1 className={classes.loginRegisterTitle}>Iniciar Sesión</h1>
-      <div className={classes.loginRegisterBtnsContainer}>
+      <h1 className={styles.loginRegisterTitle}>Iniciar Sesión</h1>
+      <div className={styles.loginRegisterBtnsContainer}>
         <button
-          className={(classes.loginRegisterBtn, classes.loginRegisterBtnActive)}
+          className={(styles.loginRegisterBtn, styles.loginRegisterBtnActive)}
         >
-          Iniciar Sesión
+          <Link to='/login' className={styles['loginRegisterBtn-text']}>
+            Iniciar Sesión
+          </Link>
         </button>
-        <button className={classes.loginRegisterBtn}>Registrarme</button>
+        <button className={styles.loginRegisterBtn}>
+          <Link to='/register' className={styles['loginRegisterBtn-text']}>
+            Registrarme
+          </Link>
+        </button>
       </div>
-      <form className={classes.loginForm}>
+      <form className={styles.loginForm}>
         <div>
           <label htmlFor='email'>Email</label>
           <input type='email' name='email' id='email' />
@@ -21,7 +28,7 @@ function Login() {
           <label htmlFor='password'>Contraseña</label>
           <input type='password' name='password' id='password' />
         </div>
-        <label className={classes.labelRecordarme}>
+        <label className={styles.labelRecordarme}>
           <input type='checkbox' name='recordarme' /> Recordame
         </label>
         <button type='submit'>Iniciar Sesión</button>

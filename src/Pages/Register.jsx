@@ -1,18 +1,25 @@
-import classes from './LoginRegister.module.css'
+import styles from './LoginRegister.module.css'
+import { Link } from 'react-router-dom'
 
 function Register() {
   return (
     <main>
-      <h1 className={classes.loginRegisterTitle}>Iniciar Sesión</h1>
-      <div className={classes.loginRegisterBtnsContainer}>
-        <button className={classes.loginRegisterBtn}>Iniciar Sesión</button>
+      <h1 className={styles.loginRegisterTitle}>Iniciar Sesión</h1>
+      <div className={styles.loginRegisterBtnsContainer}>
+        <button className={styles.loginRegisterBtn}>
+          <Link to='/login' className={styles['loginRegisterBtn-text']}>
+            Iniciar Sesión
+          </Link>
+        </button>
         <button
-          className={(classes.loginRegisterBtn, classes.loginRegisterBtnActive)}
+          className={(styles.loginRegisterBtn, styles.loginRegisterBtnActive)}
         >
-          Registrarme
+          <Link to='/register' className={styles['loginRegisterBtn-text']}>
+            Registrarme
+          </Link>
         </button>
       </div>
-      <form className={classes.registerForm}>
+      <form className={styles.registerForm}>
         <div>
           <label htmlFor='firstName'>Nombre</label>
           <input type='text' name='firstName' id='firstName' />
