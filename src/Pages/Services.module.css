@@ -89,11 +89,15 @@
   .img-pc--right {
     background-image: url('../../public/barber-cut-7.avif');
     width: 50%;
+    background-size: cover;
+    background-position: center;
   }
 
   .img-pc--left {
     background-image: url('../../public/barber-cut-10.avif');
     width: 50%;
+    background-size: cover;
+    background-position: center;
   }
 
   .services-info--pc {
