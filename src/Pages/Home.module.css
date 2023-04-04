@@ -6,6 +6,50 @@
   width: 100%;
 }
 
+.hero-section {
+  background-image: linear-gradient(rgba(153, 51, 20, 0.2), rgba(71, 0, 0, 0.2)),
+    url('../Assets/hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  height: calc(100vh - 100px);
+  /* color: white; */
+
+  display: none;
+}
+
+.hero-description-btn {
+  padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  color: #fff;
+}
+
+.hero-description-btn p {
+  /* width: 60%; */
+  /* flex: 1 0 auto; */
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.hero-description-btn button {
+  flex: 1 0 auto;
+  flex-grow: 1;
+  /* width: 40%; */
+  width: 25rem;
+  margin: 0;
+}
+
+.hero-img {
+  width: 100%;
+  display: none;
+}
+
 .carousel-circles {
   position: absolute;
   bottom: 10px;
@@ -24,9 +68,12 @@
 
 .section-title {
   color: #444;
+  color: var(--secondary-color);
   font-size: 2.8rem;
   font-weight: 600;
-  margin: 20px 0 5px 20px;
+  /* margin: 20px 0 5px 20px; */
+  padding: 4rem;
+  text-align: center;
 }
 
 .btn {
@@ -49,6 +96,10 @@
 .appointment-div {
   display: flex;
   justify-content: center;
+}
+
+.location-img {
+  width: 100%;
 }
 
 .testimonials {
@@ -89,4 +140,48 @@
   gap: 5px;
   font-size: 1.8rem;
   margin-top: 1.5rem;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .carousel-img {
+    display: none;
+  }
+
+  .hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .appointment-div {
+    display: none;
+  }
+
+  .carousel-circles {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-description-btn {
+    width: 90%;
+    flex-direction: row;
+  }
+
+  .location-img {
+    width: 90%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1440px) {
+  .hero-description-btn {
+    width: 75%;
+  }
+
+  .location-img {
+    width: 70%;
+  }
 }

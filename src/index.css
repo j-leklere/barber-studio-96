@@ -48,6 +48,15 @@ p {
   font-size: 1.8rem;
 }
 
+button {
+  transition: all 0.2s;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--main-color);
+}
+
 .nav-link,
 .nav-link-btn,
 .nav-link--pending,
@@ -57,20 +66,18 @@ p {
   font-family: 'Source Serif Pro', sans-serif;
   font-weight: 300;
   text-decoration: none;
-  font-size: 3.2rem;
+  font-size: 2.4rem;
 }
 
 .nav-link,
 .nav-link-btn {
   color: #fff;
-  transition: all ease-out 0.1s;
+  transition: all ease-out 0.2s;
 }
 
 .nav-link-btn,
 .nav-link-btn--pending,
 .nav-link-btn--active {
-  /* font-family: 'Futura PT'; */
-  /* font-size: 3.2rem; */
   letter-spacing: 1px;
 }
 
@@ -84,16 +91,10 @@ p {
 
 .nav-link--active {
   font-weight: 600;
-  /* font-size: 3.6rem; */
   color: var(--secondary-color);
-  /* color: rgb(224, 127, 17); */
 }
 
 .nav-link-btn--pending,
 .nav-link-btn--active {
   color: var(--secondary-color);
-}
-
-button:hover {
-  cursor: pointer;
 }

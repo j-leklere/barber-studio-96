@@ -52,13 +52,22 @@ header {
 @media (min-width: 768px) {
   header {
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .header-logo {
+    /* margin: 0 auto; */
+    width: 10rem;
   }
 
   .header-nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     gap: 2rem;
   }
 

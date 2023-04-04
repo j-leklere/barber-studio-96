@@ -4,11 +4,9 @@ import styles from './Header.module.css'
 
 import logo from '../Assets/bs96.png'
 import { Link, NavLink } from 'react-router-dom'
+import navLinkFn from '../Utils/navLinkFn'
 
 function Header(props) {
-  const navLinkFn = ({ isActive, isPending }) =>
-    isPending ? 'nav-link--pending' : isActive ? 'nav-link--active' : 'nav-link'
-
   return (
     <header>
       {/* <h1 className={styles['heading-primary']}>Barber Studio '96</h1> */}
@@ -40,9 +38,11 @@ function Header(props) {
             Barberos
           </NavLink>
         </li>
-        <Link to={'/'} className={styles['header-logo']}>
-          <img src={logo} alt={'barber studio 96 logo'} />
-        </Link>
+      </ul>
+      <Link to={'/'} className={styles['header-logo']}>
+        <img src={logo} alt={'barber studio 96 logo'} />
+      </Link>
+      <ul className={styles['header-nav']}>
         <li>
           <NavLink to={'/'} className={navLinkFn}>
             Contacto
@@ -53,11 +53,6 @@ function Header(props) {
             Iniciar Sesión
           </NavLink>
         </li>
-        {/* <li>
-          <NavLink to={'/'} className={navLinkFn}>
-            RESERVAR TURNO
-          </NavLink>
-        </li> */}
       </ul>
     </header>
   )

@@ -20,6 +20,7 @@ function Home() {
           src='carousel-1.jpg'
           alt='carousel-1'
         />
+
         <div className={styles['carousel-circles']}>
           <FontAwesomeIcon icon={faCircle} />
           <FontAwesomeIcon icon={faCircle} />
@@ -30,6 +31,23 @@ function Home() {
           <FontAwesomeIcon icon={faCircle} />
         </div>
       </div>
+      <div className={styles['hero-section']}>
+        <div className={styles['hero-description-btn']}>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam
+            praesentium optio quod cupiditate odio sint iste fuga magni facere
+            vel, officiis corrupti.
+          </p>
+          <button className={`${styles['btn']} ${styles['btn-appointment']}`}>
+            Reservá Turno
+          </button>
+        </div>
+        {/* <img
+          className={styles['hero-img']}
+          src='hero.jpg'
+          alt='hero section background'
+        /> */}
+      </div>
       <div className={styles['appointment-div']}>
         <button className={`${styles['btn']} ${styles['btn-appointment']}`}>
           Reservá Turno
@@ -38,7 +56,7 @@ function Home() {
       <div>
         <h1 className={styles['section-title']}>Dónde Estamos</h1>
         <img
-          style={{ width: '100%' }}
+          className={styles['location-img']}
           src='mock-location.png'
           alt='mock-location-img'
         />
