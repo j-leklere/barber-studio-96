@@ -2,7 +2,6 @@ import { faBars, faClose } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import styles from './Header.module.css'
 
-import logo from '../Assets/bs96.png'
 import { Link, NavLink } from 'react-router-dom'
 import navLinkFn from '../Utils/navLinkFn'
 
@@ -11,7 +10,7 @@ function Header(props) {
     <header>
       {/* <h1 className={styles['heading-primary']}>Barber Studio '96</h1> */}
       <Link to={'/'} className={styles['mobile-header-logo']}>
-        <img src={logo} alt={'barber studio 96 logo'} />
+        <img src={'/logo-barber.jpeg'} alt={'barber studio 96 logo'} />
       </Link>
       {!props.mobNav && (
         <FontAwesomeIcon
@@ -40,7 +39,7 @@ function Header(props) {
         </li>
       </ul>
       <Link to={'/'} className={styles['header-logo']}>
-        <img src={logo} alt={'barber studio 96 logo'} />
+        <img src={'/logo-barber.jpeg'} alt={'barber studio 96 logo'} />
       </Link>
       <ul className={styles['header-nav']}>
         <li>

@@ -21,6 +21,7 @@ header {
 
 .header-logo {
   height: 10rem;
+  display: none;
 }
 
 .mobile-header-logo img,
@@ -59,6 +60,7 @@ header {
   }
 
   .header-logo {
+    display: block;
     /* margin: 0 auto; */
     width: 10rem;
   }
