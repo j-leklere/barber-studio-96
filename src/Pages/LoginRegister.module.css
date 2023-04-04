@@ -55,6 +55,9 @@
 /* ////////// */
 /* LOGIN */
 /* ////////// */
+.login-main {
+  margin-bottom: 10rem;
+}
 
 /* ////////// */
 /* FORM */
@@ -107,6 +110,9 @@
 /* ////////// */
 /* REGISTER */
 /* ////////// */
+.register-main {
+  margin-bottom: 10rem;
+}
 
 /* ////////// */
 /* FORM */
@@ -156,15 +162,9 @@
   .loginRegisterBtnsContainer {
     width: 90rem;
   }
-  /* ////////// */
-  /* LOGIN */
-  /* ////////// */
 }
 
 @media (min-width: 768px) {
-  /* ////////// */
-  /* LOGIN */
-  /* ////////// */
   .loginForm {
     width: 65rem;
   }

@@ -1,9 +1,38 @@
 .barberos-main {
   padding: 0 5%;
+  margin-bottom: 10rem;
 }
 
 .page-title {
   text-align: center;
   color: #ff8c00;
   margin: 3rem 0;
+}
+
+/* //////////////// */
+/* //////////////// */
+/* MEDIA QUERIES */
+/* /////////////// */
+/* /////////////// */
+
+@media (min-width: 1024px) {
+  .barberos-main {
+    padding: 0 12%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .page-title {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .barberos-main {
+    padding: 0;
+  }
+
+  .page-title {
+    font-size: 3.6rem;
+  }
 }

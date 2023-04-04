@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Register() {
   return (
-    <main>
+    <main className={styles['register-main']}>
       <h1 className={styles.loginRegisterTitle}>Iniciar Sesión</h1>
       <div className={styles.loginRegisterBtnsContainer}>
         <button className={styles.loginRegisterBtn}>
