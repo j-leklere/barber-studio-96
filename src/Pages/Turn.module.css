@@ -1,0 +1,11 @@
+.main {
+  max-width: 114rem;
+  margin: auto;
+}
+
+.heading-primary {
+  color: var(--main-color);
+  text-align: center;
+  padding: 2rem 2rem 4rem;
+  text-transform: uppercase;
+}

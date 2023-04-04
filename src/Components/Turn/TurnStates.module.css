@@ -1,0 +1,66 @@
+.states {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.ball {
+  background-color: #999;
+  padding: 3rem;
+  height: 7.5rem;
+  width: 7.5rem;
+  border-radius: 50%;
+
+  position: relative;
+}
+
+.heading-secondary {
+  font-weight: 400;
+}
+
+.arrow {
+  height: 3px;
+  width: 200%;
+  background-color: #999;
+  position: absolute;
+
+  right: 1px;
+  top: 50%;
+  transform: translate(100%, -50%);
+}
+
+.state-first .ball {
+  background-color: #111;
+  /* z-index: 1000; */
+}
+.state-first .arrow {
+  background-color: #111;
+  /* z-index: 500; */
+}
+.state-second .ball {
+  background-color: #111;
+  /* z-index: 1000; */
+}
+.state-second .arrow {
+  background-color: #111;
+  /* z-index: 500; */
+}
+.state-third .ball {
+  background-color: #111;
+  /* z-index: 1000; */
+}
+/* .state-third .arrow {
+  background-color: #111;
+  z-index: 500;
+}
+.state-fourth .ball {
+  background-color: #111;
+  z-index: 1000;
+} */

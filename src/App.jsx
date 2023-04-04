@@ -1,9 +1,10 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Home from './Pages/Home'
-import Services from './Pages/Services'
 import Error from './Pages/Error'
 import RootLayout from './Pages/RootLayout'
+import Home from './Pages/Home'
+import Services from './Pages/Services'
 import Barbers from './Pages/Barbers'
+import Turn from './Pages/Turn'
 import Login from './Pages/Login'
 import Register from './Pages/Register'
 
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: '/barberos',
         element: <Barbers />,
+      },
+      {
+        path: '/reserva-de-turno',
+        element: <Turn />,
       },
       {
         path: '/login',
