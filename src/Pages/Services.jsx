@@ -3,7 +3,7 @@ import styles from './Services.module.css'
 function Services() {
   return (
     <main className={styles.main}>
-      <h1 className={styles['heading-primary']}>&#126; Services &#126;</h1>
+      <h1 className={styles['heading-primary']}>&#126; Servicios &#126;</h1>
       <section className={styles['section-services--mobile']}>
         <div className={styles['services-service']}>
           <div>

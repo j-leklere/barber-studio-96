@@ -4,13 +4,13 @@ import InfoDate from './InfoDate'
 import InfoConfirmation from './InfoConfirmation'
 import styles from './TurnInfo.module.css'
 
-function TurnInfo() {
+function TurnInfo(props) {
   return (
     <section className={styles.info}>
-      <InfoServices />
-      <InfoBarbers />
-      <InfoDate />
-      <InfoConfirmation />
+      <InfoServices nextStep={props.nextStep} />
+      <InfoBarbers nextStep={props.nextStep} />
+      <InfoDate nextStep={props.nextStep} />
+      <InfoConfirmation nextStep={props.nextStep} />
     </section>
   )
 }

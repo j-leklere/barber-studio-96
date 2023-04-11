@@ -1,3 +1,42 @@
 .info-barbers {
   display: none;
+  padding: 3.2rem;
+}
+
+.heading-tertiary {
+  font-size: 3.2rem;
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+
+.barbers-types {
+  padding: 2.4rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+}
+
+.barbers-types div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 2rem 0;
+}
+
+.barbers-types input {
+  height: 2.4rem;
+  width: 2.4rem;
+  /* padding: 1rem; */
+  display: inline-block;
+}
+.barbers-types label {
+  font-size: 2.4rem;
+  padding-left: 2rem;
+  /* padding: 1rem; */
+  display: inline-block;
 }

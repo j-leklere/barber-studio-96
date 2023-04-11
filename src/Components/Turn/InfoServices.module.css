@@ -1,11 +1,12 @@
+.info-services {
+  padding: 3.2rem;
+  display: none;
+}
+
 .heading-tertiary {
   font-size: 3.2rem;
   color: var(--main-color);
   text-transform: uppercase;
-}
-
-.info-services {
-  padding: 3.2rem;
 }
 
 .services-types {
@@ -40,9 +41,10 @@
   display: inline-block;
 }
 
-.heading-quaternary,
-.heading-quaternary:link,
-.heading-quaternary:visited {
+.btn-next,
+.btn-next:link,
+.btn-next:visited {
+  border: none;
   font-size: 2.4rem;
   color: #fff;
   font-weight: 400;
@@ -55,7 +57,7 @@
   transition: all 0.2s;
 }
 
-.heading-quaternary:hover {
+.btn-next:hover {
   cursor: pointer;
   transform: translateY(-0.4rem);
   box-shadow: 0 0.8rem 3rem rgba(0, 0, 0, 0.1);

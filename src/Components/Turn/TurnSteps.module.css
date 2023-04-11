@@ -33,34 +33,15 @@
 
   right: 1px;
   top: 50%;
-  transform: translate(100%, -50%);
+  transform: translate(-50%, -50%);
 }
 
-.state-first .ball {
+.step-active .ball {
   background-color: #111;
-  /* z-index: 1000; */
+  z-index: 10;
 }
-.state-first .arrow {
+
+.step-active .arrow {
   background-color: #111;
-  /* z-index: 500; */
+  z-index: 5;
 }
-.state-second .ball {
-  background-color: #111;
-  /* z-index: 1000; */
-}
-.state-second .arrow {
-  background-color: #111;
-  /* z-index: 500; */
-}
-.state-third .ball {
-  background-color: #111;
-  /* z-index: 1000; */
-}
-/* .state-third .arrow {
-  background-color: #111;
-  z-index: 500;
-}
-.state-fourth .ball {
-  background-color: #111;
-  z-index: 1000;
-} */
