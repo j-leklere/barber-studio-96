@@ -11,6 +11,7 @@ import InfoServices from './Components/Turn/InfoServices'
 import InfoBarbers from './Components/Turn/InfoBarbers'
 import InfoDate from './Components/Turn/InfoDate'
 import InfoConfirmation from './Components/Turn/InfoConfirmation'
+import Profile from './Pages/Profile'
 
 const router = createBrowserRouter([
   {
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
       {
         path: '/register',
         element: <Register />,
+      },
+      {
+        path: '/profile',
+        element: <Profile />,
       },
     ],
   },
