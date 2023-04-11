@@ -6,9 +6,9 @@ function InfoDate(props) {
       <h3 className={styles['heading-tertiary']}>Elegir Fecha</h3>
       <div className={styles['calendar']}>CALENDARIO</div>
 
-      <button onClick={props.nextStep} className={styles['btn-next']}>
+      {/* <button onClick={props.nextStep} className={styles['btn-next']}>
         Siguiente
-      </button>
+      </button> */}
     </div>
   )
 }

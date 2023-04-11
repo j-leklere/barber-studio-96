@@ -1,10 +1,19 @@
-.states {
+.steps {
   display: flex;
   justify-content: center;
   gap: 10rem;
 }
 
-.state {
+.steps a {
+  text-decoration: none;
+  color: #999;
+}
+
+.steps h2 {
+  color: #999;
+}
+
+.step {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,6 +43,10 @@
   right: 1px;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.step-active h2 {
+  color: #111;
 }
 
 .step-active .ball {

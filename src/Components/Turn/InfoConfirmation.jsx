@@ -22,9 +22,9 @@ function InfoConfirmation(props) {
         </div>
       </div>
 
-      <button onClick={props.nextStep} className={styles['btn-next']}>
+      {/* <button onClick={props.nextStep} className={styles['btn-next']}>
         Siguiente
-      </button>
+      </button> */}
     </div>
   )
 }

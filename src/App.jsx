@@ -7,6 +7,10 @@ import Barbers from './Pages/Barbers'
 import Turn from './Pages/Turn'
 import Login from './Pages/Login'
 import Register from './Pages/Register'
+import InfoServices from './Components/Turn/InfoServices'
+import InfoBarbers from './Components/Turn/InfoBarbers'
+import InfoDate from './Components/Turn/InfoDate'
+import InfoConfirmation from './Components/Turn/InfoConfirmation'
 
 const router = createBrowserRouter([
   {
@@ -29,6 +33,16 @@ const router = createBrowserRouter([
       {
         path: '/reserva-de-turno',
         element: <Turn />,
+        children: [
+          {
+            path: 'elegir-servicios',
+            // index: true,
+            element: <InfoServices />,
+          },
+          { path: 'elegir-barberos', element: <InfoBarbers /> },
+          { path: 'fecha', element: <InfoDate /> },
+          { path: 'confirmacion', element: <InfoConfirmation /> },
+        ],
       },
       {
         path: '/login',

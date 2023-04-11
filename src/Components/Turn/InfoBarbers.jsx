@@ -1,6 +1,6 @@
 import styles from './InfoBarbers.module.css'
 
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 function InfoBarbers(props) {
   return (
@@ -17,11 +17,11 @@ function InfoBarbers(props) {
           <label htmlFor='Christian'>Christian</label>
         </div>
       </div>
-      <Link>
+      {/* <Link>
         <button onClick={props.nextStep} className={styles['btn-next']}>
           Siguiente
         </button>
-      </Link>
+      </Link> */}
     </div>
   )
 }

@@ -1,6 +1,6 @@
 import styles from './InfoServices.module.css'
 
-function InfoServices(props) {
+function InfoServices() {
   return (
     <div className={styles['info-services']}>
       <h3 className={styles['heading-tertiary']}>Elegir Servicio</h3>
@@ -21,9 +21,7 @@ function InfoServices(props) {
         </div>
       </div>
 
-      <button onClick={props.nextStep} className={styles['btn-next']}>
-        Siguiente
-      </button>
+      {/* <button className={styles['btn-next']}>Siguiente</button> */}
     </div>
   )
 }
