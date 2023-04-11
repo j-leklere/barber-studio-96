@@ -98,3 +98,50 @@ button:hover {
 .nav-link-btn--active {
   color: var(--secondary-color);
 }
+
+/* //////////// */
+/*    SWIPER    */
+/* //////////// */
+
+.hero-slide {
+  position: relative;
+}
+
+.hero-slide img {
+  object-fit: cover;
+  height: calc(100vh - 98px);
+  width: 100%;
+}
+
+.hero-slide::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(153, 51, 20, 0.2), rgba(71, 0, 0, 0.2));
+}
+
+span.swiper-pagination-bullet {
+  width: 1.6rem;
+  height: 1.6rem;
+  background-color: var(--main-color);
+}
+
+div.swiper-button-prev,
+div.swiper-button-next {
+  color: var(--main-color);
+}
+
+@media (max-width: 768px) {
+  div.swiper-button-prev,
+  div.swiper-button-next {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  div.swiper img {
+    height: 40% !important;
+  }
+}

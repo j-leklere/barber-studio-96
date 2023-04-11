@@ -9,18 +9,13 @@ import navLinkFn from '../Utils/navLinkFn'
 function Footer() {
   return (
     <footer>
-      {/* <div className={classes.footerBorderTop}></div> */}
-      <div className={classes.footerContainer}>
-        <div className={classes.footerLogos}>
+      <div className={classes['footer-container']}>
+        <div className={classes['footer-logos']}>
           <img
             src='/logo-barber.jpeg'
             alt=''
-            className={classes.footerLogosImg}
+            className={classes['footer-logos-img']}
           />
-          {/* <div className={classes.footerLogosRedes}>
-            <a>ig</a>
-            <a>mail</a>
-          </div> */}
         </div>
         <ul className={classes['links-footer-desktop']}>
           <li>
@@ -44,7 +39,7 @@ function Footer() {
             </NavLink>
           </li>
         </ul>
-        <ul className={classes.footerInfo}>
+        <ul className={classes['footer-info']}>
           <li>
             <a
               href='https://www.instagram.com'
@@ -65,8 +60,7 @@ function Footer() {
           </li>
         </ul>
       </div>
-      {/* <div className={classes.footerBorderBottom}></div> */}
-      <p className={classes.footerCopy}>© 2023 Copyright</p>
+      <p className={classes['footer-copy']}>© 2023 Copyright</p>
     </footer>
   )
 }

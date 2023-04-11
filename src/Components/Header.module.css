@@ -9,14 +9,12 @@ header {
 
   padding: 20px 5%;
   padding: 10px 20px;
+  padding: 0 20px;
   background-color: #292929;
-
-  /* border-bottom: 1px solid #888; */
 }
 
 .mobile-header-logo {
   height: 7rem;
-  /* height: 100%; */
 }
 
 .header-logo {
@@ -37,7 +35,6 @@ header {
 
 .heading-primary {
   font-size: 3rem;
-  /* font-style: italic; */
   text-transform: uppercase;
   font-weight: 500;
   color: #fff;
@@ -45,7 +42,6 @@ header {
 
 .nav-btn {
   color: #fff;
-  /* font-size: 5rem; */
   width: 5rem;
   height: 5rem;
 }
@@ -61,7 +57,6 @@ header {
 
   .header-logo {
     display: block;
-    /* margin: 0 auto; */
     width: 10rem;
   }
 
@@ -69,7 +64,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin: 0 auto; */
     gap: 2rem;
   }
 

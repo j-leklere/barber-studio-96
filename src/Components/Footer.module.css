@@ -3,21 +3,19 @@
 /* ////////// */
 footer {
   margin-top: 200px;
-  /* background-color: #ff8b00; */
-  /* background-color: #ffd369; */
+
   background-color: #292929;
   color: #fff;
   padding: 0 1rem;
   padding-top: 30px;
 }
 
-.footerContainer {
+.footer-container {
   display: flex;
   justify-content: center;
   align-items: center;
 
   padding: 4rem 0;
-  /* margin-bottom: 20px; */
 }
 
 .links-footer-desktop {
@@ -32,76 +30,45 @@ footer {
 /* LOGOS */
 /* ////////// */
 
-.footerLogos {
+.footer-logos {
   width: 30%;
   text-align: center;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
 }
 
-.footerLogosImg {
+.footer-logos-img {
   width: 80%;
   max-width: 20rem;
-  /* margin-bottom: 10px; */
-}
-
-.footerLogosRedes {
-  display: flex;
-  justify-content: space-around;
 }
 
 /* ////////// */
 /* INFO */
 /* ////////// */
-.footerInfo {
+.footer-info {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  /* width: 60%; */
   width: 30%;
   text-align: center;
   list-style: none;
-  /* align-self: flex-start; */
 }
 
-.footerInfo li {
+.footer-info li {
   font-size: 2rem;
 }
 
-.footerInfo li a {
+.footer-info li a {
   text-decoration: none;
   color: #fff;
 }
 
-/* .footerInfo li a {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-} */
-
-.footerInfo svg {
+.footer-info svg {
   font-size: 2rem;
-}
-
-.footerInfoTitle {
-  margin-bottom: 15px;
-  color: #fff;
-}
-
-.footerInfoLink {
-  font-size: 20px;
-  text-decoration: none;
-  color: #fff;
-
-  margin-bottom: 10px;
-  display: block;
 }
 
 /* ////////// */
 /* COPY */
 /* ////////// */
-.footerCopy {
+.footer-copy {
   text-align: center;
   color: rgba(255, 255, 255, 0.521);
 
@@ -111,23 +78,6 @@ footer {
 /* ////////// */
 /* DECO */
 /* ////////// */
-.footerBorderTop {
-  width: 80%;
-  border-top: 1px solid rgba(255, 255, 255, 0.521);
-
-  padding-bottom: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.footerBorderBottom {
-  width: 80%;
-  border-top: 1px solid rgba(255, 255, 255, 0.521);
-
-  padding-top: 5px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 @media (min-width: 768px) {
   .links-footer-desktop {
@@ -136,7 +86,7 @@ footer {
     gap: 2rem;
   }
 
-  .footerCopy {
+  .footer-copy {
     text-align: right;
   }
 }
