@@ -54,7 +54,7 @@ button {
 
 button:hover {
   cursor: pointer;
-  background-color: var(--main-color);
+  /* background-color: var(--main-color); */
 }
 
 .nav-link,

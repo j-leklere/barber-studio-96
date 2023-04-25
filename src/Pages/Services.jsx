@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import styles from './Services.module.css'
 
 function Services() {
@@ -17,7 +18,7 @@ function Services() {
             <h2 className={styles['heading-secondary services-title']}>
               Corte Estándar
             </h2>
-            <button className={styles['more-info-btn']}>INFO BTN</button>
+            <button className={styles['more-info-btn']}>i</button>
           </div>
         </div>
         <div className={styles['services-service']}>
@@ -32,7 +33,7 @@ function Services() {
             <h2 className={styles['heading-secondary services-title']}>
               Corte + Barba
             </h2>
-            <button className={styles['more-info-btn']}>INFO BTN</button>
+            <button className={styles['more-info-btn']}>i</button>
           </div>
         </div>
       </section>
@@ -42,7 +43,9 @@ function Services() {
             <div className={styles['services-info-info--pc']}>
               <div className={styles['name-price']}>
                 <h2 className={styles['nombre']}>Pelo</h2>
-                <h2 className={styles['precio']}>$1500</h2>
+                <Link to={'/reserva-de-turno'}>
+                  <button className={styles['precio']}>$1500</button>
+                </Link>
               </div>
               <p className={styles['descripcion']}>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -67,7 +70,9 @@ function Services() {
             <div className={styles['services-info-info--pc']}>
               <div className={styles['name-price']}>
                 <h2 className={styles['nombre']}>Pelo</h2>
-                <h2 className={styles['precio']}>$1500</h2>
+                <Link to={'/reserva-de-turno'}>
+                  <button className={styles['precio']}>$1500</button>
+                </Link>
               </div>
               <p className={styles['descripcion']}>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.

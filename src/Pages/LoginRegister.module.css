@@ -22,34 +22,32 @@
 .loginRegisterBtn {
   font-size: 2rem;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.3);
   border: none;
   cursor: default;
-  border-bottom: solid 1px rgba(0, 0, 0, 0.3);
-
-  width: 100%;
-  background-color: white;
-  padding: 1.5rem;
-  margin-bottom: 2.5rem;
-}
-
-.loginRegisterBtnActive {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #ff8b00;
-  border: none;
-  border-bottom: solid 1px #ff8b00;
-  cursor: default;
-
-  width: 100%;
-  background-color: white;
-  padding: 1.5rem;
-  margin-bottom: 2.5rem;
-}
-
-.loginRegisterBtn-text {
-  text-decoration: none;
   color: inherit;
+  background-color: inherit;
+}
+
+.loginRegisterBtn-container {
+  text-align: center;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  background-color: white;
+
+  padding: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.loginRegisterBtn-container-active {
+  text-align: center;
+  border-bottom: solid 1px #ff8b00;
+  color: #ff8b00;
+  width: 100%;
+  background-color: white;
+
+  padding: 1.5rem;
+  margin-bottom: 2.5rem;
 }
 
 /* ////////// */

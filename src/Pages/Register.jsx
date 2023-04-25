@@ -4,20 +4,17 @@ import { Link } from 'react-router-dom'
 function Register() {
   return (
     <main className={styles['register-main']}>
-      <h1 className={styles.loginRegisterTitle}>Iniciar Sesión</h1>
+      <h1 className={styles.loginRegisterTitle}>Registrarme</h1>
       <div className={styles.loginRegisterBtnsContainer}>
-        <button className={styles.loginRegisterBtn}>
-          <Link to='/login' className={styles['loginRegisterBtn-text']}>
-            Iniciar Sesión
-          </Link>
-        </button>
-        <button
-          className={(styles.loginRegisterBtn, styles.loginRegisterBtnActive)}
+        <Link to='/login' className={styles['loginRegisterBtn-container']}>
+          <button className={styles.loginRegisterBtn}>Iniciar Sesión</button>
+        </Link>
+        <Link
+          to='/register'
+          className={styles['loginRegisterBtn-container-active']}
         >
-          <Link to='/register' className={styles['loginRegisterBtn-text']}>
-            Registrarme
-          </Link>
-        </button>
+          <button className={styles.loginRegisterBtn}>Registrarme</button>
+        </Link>
       </div>
       <form className={styles.registerForm}>
         <div>
