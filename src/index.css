@@ -65,13 +65,14 @@ button:hover {
 .nav-link-btn--active {
   font-family: 'Source Serif Pro', sans-serif;
   font-weight: 300;
+  font-weight: 500;
   text-decoration: none;
   font-size: 2.4rem;
 }
 
 .nav-link,
 .nav-link-btn {
-  color: #fff;
+  color: #ddd;
   transition: all ease-out 0.2s;
 }
 
@@ -90,7 +91,7 @@ button:hover {
 }
 
 .nav-link--active {
-  font-weight: 600;
+  /* font-weight: 600; */
   color: var(--secondary-color);
 }
 
@@ -109,7 +110,9 @@ button:hover {
 
 .hero-slide img {
   object-fit: cover;
+  object-position: top;
   height: calc(100vh - 98px);
+  height: 100vh;
   width: 100%;
 }
 

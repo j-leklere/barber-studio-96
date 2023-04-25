@@ -44,7 +44,7 @@ function Slider() {
     >
       <SwiperSlide>
         <div className='hero-slide'>
-          <img src='/carousel-1.jpg' alt='Carousel slide 1' />
+          <img src='/carousel-5.jpg' alt='Carousel slide 1' />
         </div>
       </SwiperSlide>
       <SwiperSlide>
@@ -54,7 +54,7 @@ function Slider() {
       </SwiperSlide>
       <SwiperSlide>
         <div className='hero-slide'>
-          <img src='/carousel-3.avif' alt='Carousel slide 3' />
+          <img src='/carousel-4.jpg' alt='Carousel slide 3' />
         </div>
       </SwiperSlide>
     </Swiper>

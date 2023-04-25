@@ -23,6 +23,28 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <!-- Calendly badge widget begin -->
+    <link
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      type="text/javascript"
+      async
+    ></script>
+    <script type="text/javascript">
+      window.onload = function () {
+        Calendly.initBadgeWidget({
+          url: 'https://calendly.com/santiagoleklere/30min?primary_color=ff8c00',
+          text: 'Reserva turno!',
+          color: '#ff8c00',
+          textColor: '#ffffff',
+          branding: false,
+        })
+      }
+    </script>
+    <!-- Calendly badge widget end -->
     <title>Barber Studio 96</title>
   </head>
   <body>
