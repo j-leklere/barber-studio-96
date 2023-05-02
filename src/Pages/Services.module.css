@@ -4,8 +4,11 @@
 
 .heading-primary {
   font-size: 3rem;
+  margin: 2rem 0;
+  font-size: var(--page-title-size);
   padding-top: 2rem;
   color: #efb810;
+  color: #ddd;
   font-weight: 700;
   text-align: center;
 }
@@ -93,7 +96,7 @@
 
 @media (min-width: 768px) {
   .main {
-    background-color: #fff;
+    /* background-color: #fff; */
   }
 
   .section-services--mobile {
@@ -152,6 +155,7 @@
   .nombre {
     font-size: 2.8rem;
     color: #222;
+    color: var(--heading-light);
   }
 
   .precio,
@@ -159,7 +163,9 @@
   .precio:active {
     padding: 1rem 3rem;
     background-color: #efb810;
+    background-color: var(--main-color);
     color: #222;
+    color: var(--heading-light);
     font-size: 2.4rem;
     font-weight: 400;
     border: none;
@@ -169,6 +175,7 @@
     padding: 1rem 3rem;
     background-color: #222;
     color: #efb810;
+    color: var(--main-color);
     font-size: 2.4rem;
     font-weight: 400;
     border: none;
@@ -180,5 +187,6 @@
     font-size: 2.2rem;
     letter-spacing: 1px;
     color: #222;
+    color: var(--text-light);
   }
 }

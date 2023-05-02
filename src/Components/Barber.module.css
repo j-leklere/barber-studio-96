@@ -19,10 +19,16 @@
 .ig-icon {
   font-size: 2.8rem;
   color: #444;
+  color: #eee;
 }
 
 .barber-description {
   margin: 1rem 0;
+  color: #ccc;
+}
+
+.barber-h3-cuts-container h3 {
+  color: #eee;
 }
 
 .barber-cuts-grid {

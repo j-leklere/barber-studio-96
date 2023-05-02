@@ -3,14 +3,15 @@ import { faCircle as faCircleSolid } from '@fortawesome/free-solid-svg-icons'
 
 import styles from './Home.module.css'
 import { faCircle } from '@fortawesome/free-regular-svg-icons'
-import Slider from '../Components/Slider'
+import HeroSlider from '../Components/HeroSlider'
 import { Link } from 'react-router-dom'
+import TestimonialsSlider from '../Components/TestimonialsSlider'
 
 function Home() {
   return (
     <>
       <div className={styles['hero-section']}>
-        <Slider />
+        <HeroSlider />
         <div className={styles['hero-description-btn']}>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam
@@ -42,7 +43,10 @@ function Home() {
       </div>
       <div>
         <h1 className={styles['section-title']}>Testimonios</h1>
-        <div className={styles['testimonials']}>
+        <div className={styles['testimonials-slider']}>
+          <TestimonialsSlider />
+        </div>
+        {/* <div className={styles['testimonials']}>
           <div
             className={styles['testimonial-img']}
             style={{ backgroundImage: 'url(user-img.jpg)' }}
@@ -60,7 +64,7 @@ function Home() {
             <FontAwesomeIcon icon={faCircle} />
             <FontAwesomeIcon icon={faCircle} />
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   )

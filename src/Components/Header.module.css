@@ -1,10 +1,13 @@
 header {
   position: sticky;
   /* position: fixed;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 100vw; */
 
-  top: 8rem; */
+  /* left: 50%;
+  transform: translate(-50%); */
+
+  /* top: 5rem; */
+  top: 0;
   z-index: 100;
 
   display: flex;
@@ -14,8 +17,8 @@ header {
   /* padding: 20px 5%; */
   /* padding: 0 30px !important;
   border-radius: 5px; */
-  /* padding: 0 20px; */
-  background-color: #292929;
+  padding: 0 20px;
+  background-color: rgb(41, 41, 41);
   /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
 }
 
@@ -58,7 +61,14 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 4rem;
+    gap: 6rem;
+
+    /* position: fixed;
+    width: 100vw;
+    min-height: 10rem;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: unset; */
   }
 
   .header-logo {
@@ -70,7 +80,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 6rem;
   }
 
   .nav-btn,
