@@ -25,22 +25,23 @@ function Slider() {
       loop={true}
       pagination={{ clickable: true, type: 'bullets' }}
       navigation={true}
-      effect={'creative'}
+      // effect={'creative'}
       grabCursor={true}
-      creativeEffect={{
-        prev: {
-          shadow: true,
-          translate: ['-20%', 0, -1],
-        },
-        next: {
-          translate: ['100%', 0, 0],
-        },
-      }}
+      // creativeEffect={{
+      //   prev: {
+      //     // shadow: true,
+      //     translate: ['-20%', 0, -1],
+      //   },
+      //   next: {
+      //     translate: ['100%', 0, 0],
+      //   },
+      // }}
       keyboard={{ enabled: true, onlyInViewport: false }}
       autoplay={{ delay: 5000, disableOnInteraction: false }}
-      spaceBetween={50}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={swiper => console.log(swiper)}
+      spaceBetween={0}
+      // onSlideChange={() => console.log('slide change')}
+      // onSwiper={swiper => console.log(swiper)}
+      speed={1000}
     >
       <SwiperSlide>
         <div className='hero-slide'>

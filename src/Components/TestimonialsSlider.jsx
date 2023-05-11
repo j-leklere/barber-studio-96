@@ -35,6 +35,7 @@ function TestimonialsSlider() {
       spaceBetween={50}
       onSlideChange={() => console.log('slide change')}
       onSwiper={swiper => console.log(swiper)}
+      speed={1200}
     >
       <SwiperSlide>
         <div className='testimonial-slide'>
